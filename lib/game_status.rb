@@ -15,7 +15,7 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-def won(board)
+def won?(board)
   WIN_COMBINATIONS.each do |combo|
       if position_taken?(board, combo[0]) && position_taken?(board, combo[1]) && position_taken?(board, combo[2])
         if board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X"
@@ -27,5 +27,11 @@ def won(board)
         end
       end
   end
-  
+
+end
+
+def full?(board)
+  board.any? do |section|
+    !position_taken?(board, section)
+  end 
 end
