@@ -30,12 +30,14 @@ def won?(board)
 end
 
 def full?(board)
+  full = true
   board.each do |section|
     if !position_taken?(board, section)
-      false
+      full = false
       break;
     end
   end
+  
 end
 
 def draw?(board)
