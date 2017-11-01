@@ -33,6 +33,7 @@ def full?(board)
   if board.any?{|section| !position_taken?(board, section)}
     false
   end
+  true
 end
 
 def draw?(board)
