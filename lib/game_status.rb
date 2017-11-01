@@ -25,6 +25,7 @@ def won?(board)
         else
           false
         end
+        false
       end
   end
 
@@ -53,5 +54,3 @@ def over?(board)
     false
   end
 end
-
-
