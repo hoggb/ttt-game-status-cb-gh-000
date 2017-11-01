@@ -33,5 +33,14 @@ end
 def full?(board)
   board.any? do |section|
     !position_taken?(board, section)
-  end 
+  end
 end
+
+def draw?(board)
+  if !won?(board) && full?(board)
+    true
+  elsif !won?(board) && !full?(board)
+    false
+  elsif won?(board)
+    true
+  end
