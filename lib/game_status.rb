@@ -31,7 +31,7 @@ end
 
 def full?(board)
   board.any? do |section|
-    !position_taken?(board, section)
+    position_taken?(board, section)
   end
 end
 
