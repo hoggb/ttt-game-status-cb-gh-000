@@ -37,7 +37,7 @@ def full?(board)
       break;
     end
   end
-  
+  full
 end
 
 def draw?(board)
