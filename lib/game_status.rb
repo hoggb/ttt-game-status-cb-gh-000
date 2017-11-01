@@ -35,9 +35,10 @@ def full?(board)
     if !position_taken?(board, section.to_i)
       full = false
       break;
+    else
+      true
     end
   end
-  full
 end
 
 def draw?(board)
