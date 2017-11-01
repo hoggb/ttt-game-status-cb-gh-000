@@ -30,7 +30,9 @@ def won?(board)
 end
 
 def full?(board)
-  board.any?{|section| !position_taken?(board, section.to_i)}
+  if board.any?{|section| !position_taken?(board, section.to_i)}
+    false
+  end
 end
 
 def draw?(board)
