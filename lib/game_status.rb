@@ -23,12 +23,8 @@ def won?(board)
           won = combo
         elsif board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O"
           won = combo
-        else
-          won = false
         end
-      else
-        won = false
-      end
+      end  
   end
   won
 end
