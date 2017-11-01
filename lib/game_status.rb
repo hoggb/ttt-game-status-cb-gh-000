@@ -30,6 +30,7 @@ def won?(board)
 end
 
 def full?(board)
+  full = false
   board.each do |section|
     if !position_taken?(board, section.to_i)
       false
