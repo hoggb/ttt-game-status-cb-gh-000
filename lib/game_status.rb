@@ -30,7 +30,12 @@ def won?(board)
 end
 
 def full?(board)
-  board.any?{|section| !position_taken?(board, section.to_i)}
+  board.each do |section|
+    if !position_taken?(board, section.to_i)
+      false
+      break;
+    else
+      true
 end
 
 def draw?(board)
