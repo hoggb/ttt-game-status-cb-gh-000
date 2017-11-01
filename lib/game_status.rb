@@ -32,7 +32,7 @@ end
 def full?(board)
   full = true
   board.each do |section|
-    
+
     if section == " " || section == nil
 
       full = false
