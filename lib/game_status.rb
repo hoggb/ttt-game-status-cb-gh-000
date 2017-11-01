@@ -31,7 +31,7 @@ end
 
 def full?(board)
   board.each do |section|
-    if !position_taken?(board, section.to_i)
+    if !position_taken?(board, section)
       false
       break;
     end
