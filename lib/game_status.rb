@@ -67,4 +67,5 @@ def winner(board)
   elsif won?(board)[0] == "O" && won?(board)[1] == "O" && won?(board)[2] == "O"
     winner = "O"
   end
+  winner
 end
