@@ -66,7 +66,7 @@ def winner(board)
   elsif board[won?(board)[0]] == "O" && board[won?(board)[1]] == "O" && board[won?(board)[2]] == "O"
     winner = "O"
   else
-    puts "TESTESTETETSETESTS"
-    winner = false
+    
+    winner = nil
   end
 end
