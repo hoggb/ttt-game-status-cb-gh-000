@@ -65,7 +65,7 @@ def winner(board)
     winner = "X"
   elsif board[won?(board)[0]] == "O" && board[won?(board)[1]] == "O" && board[won?(board)[2]] == "O"
     winner = "O"
-  elsif won?(board) == false
+  elsif draw?(board)
     winner = nil
   end
 end
