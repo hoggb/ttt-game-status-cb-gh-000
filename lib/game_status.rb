@@ -61,13 +61,13 @@ def over?(board)
 end
 
 def winner(board)
-  if board[won?(board)[0]] == "X" && board[won?(board)[1]] == "X" && board[won?(board)[2]] == "X"
-    winner = "X"
-  elsif board[won?(board)[0]] == "O" && board[won?(board)[1]] == "O" && board[won?(board)[2]] == "O"
-    winner = "O"
+  if won?(board) != false
+    if board[won?(board)[0]] == "X" && board[won?(board)[1]] == "X" && board[won?(board)[2]] == "X"
+      winner = "X"
+    elsif board[won?(board)[0]] == "O" && board[won?(board)[1]] == "O" && board[won?(board)[2]] == "O"
+      winner = "O"
+    end
   else
-    puts "TEST"
     winner = nil
   end
-  winner
 end
